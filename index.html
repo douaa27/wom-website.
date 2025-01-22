@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOM - World of Maths</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            background-color: #333;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            text-align: center;
+            padding: 3rem 1rem;
+            background-color: #f4f4f4;
+        }
+        .hero h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .section {
+            padding: 2rem;
+        }
+        .section:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .testimonials {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        form input, form textarea, form button {
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WOM - World of Maths</h1>
+        <p>Votre réussite en mathématiques commence ici.</p>
+    </header>
+    <nav>
+        <a href="#about">À propos</a>
+        <a href="#courses">Cours</a>
+        <a href="#testimonials">Témoignages</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h1>Bienvenue chez WOM</h1>
+        <p>Des cours particuliers adaptés à vos besoins, pour tous les niveaux.</p>
+        <button onclick="alert('Réservez dès maintenant !')">Commencer maintenant</button>
+    </section>
+    <section id="about" class="section">
+        <h2>À propos</h2>
+        <p>WOM (World of Maths) est une entreprise spécialisée dans les cours particuliers de mathématiques en ligne. Notre mission est d'aider chaque élève à atteindre son plein potentiel en mathématiques.</p>
+    </section>
+    <section id="courses" class="section">
+        <h2>Cours</h2>
+        <p>Nous proposons des cours pour : </p>
+        <ul>
+            <li>Primaire</li>
+            <li>Secondaire</li>
+            <li>Universitaire</li>
+        </ul>
+        <p>Chaque session est personnalisée selon vos besoins spécifiques.</p>
+    </section>
+    <section id="testimonials" class="section testimonials">
+        <h2>Témoignages</h2>
+        <p>"Grâce à WOM, mon fils a enfin compris les mathématiques !" – Parent</p>
+        <p>"Les sessions sont claires et engageantes, je recommande !" – Étudiant</p>
+    </section>
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form>
+            <input type="text" placeholder="Votre nom" required>
+            <input type="email" placeholder="Votre email" required>
+            <textarea placeholder="Votre message" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    <footer>
+        <p>© 2025 WOM - World of Maths | Tous droits réservés</p>
+    </footer>
+</body>
+</html>
